@@ -12,42 +12,128 @@ header{
 .header__contacts_phone{
    cursor: pointer;
 }
-.header__contacts a{
+
+.header__contacts a,
+.header__content_pages a,
+.header__content_buttons__buy a,
+.header__content_buttons__hotel a,
+.main__introduction h4,
+.main__introduction a,
+.main__reservation_imputs form,
+.main__reservation div div div:nth-child(3){
     font-family: "Barlow", sans-serif;
+}
+.header__contacts a,
+.header__content_pages a,
+.header__content_buttons__hotel a,
+.main__introduction a,
+.main__introduction h4,
+.main__introduction h2,
+.main__introduction a,
+.send_button a{
     color: #fff;
+}
+.header__contacts a{
     display: flex;
     align-items: center;
+}
+.header__contacts a,
+.header__content_buttons__buy,
+.main__reservation h4,
+.main__reservation_imputs form{
     font-size: 18px;
 }
 .header__content{
     margin-top: 26px;
 }
 .header__content_pages a{
-    font-family: "Barlow", sans-serif;
-    color: #fff;
     font-size: 20px;
     width: max-content;
 }
-.header__content_buttons :nth-child(1){
-    background-color: #fff;
-    width: 168px;
-    height: 62px;
-    color: #1E1E1E;
-    width: max-content;
-    align-items: center;
-    padding: 0px 1px;
+.header__content_buttons__buy a,
+.header__content_buttons__hotel a,
+.main__introduction a{
+    padding: 20px 30px;
 }
-.header_bg_img{
+.header__content_buttons__hotel,
+.main__introduction a
+{
+    border: 1px solid #fff;
+    width: fit-content;
+}
+.header__content_buttons__buy{
+    background-color: #fff;
+}
+.header__content_buttons__buy a,
+.header__content_buttons__hotel a{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: max-content;
+}
+.header__content_buttons__buy a{
+    color: #1E1E1E;
+}
+.main_bg_img{
     position: relative;
 }
-.header_bg_img img{
+.main_bg_img img{
     width: 100%;
+    min-height: fit-content;
     height: auto;
     filter: brightness(0.4);
+    object-fit: contain;
+}
+.main__introduction{
+    margin-top: 155px;
+}
+.main__introduction h4{
+    font-size: 30px;
+}
+.main__introduction h2{
+     font-size: 76px;
+}
+.main__introduction h2,
+.main__reservation h2{
+    font-family: "Playfair Display", serif;
+}
+.main__introduction a{
+    display: block;
+    margin: auto;
+    font-size: 24px;
+    margin-top: 80px;
+}
+.main__reservation div{
+    background-color: #F5F5F5;
+    padding: 10px;
+}
+.main__reservation{
+    top: -50px;
+    position: relative;
+}
+.main__reservation h2{
+    font-size: 42px;
+}
+.main__reservation_imputs form{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.main__reservation_imputs input,
+.main__reservation_imputs select
+{
+    border: 1px solid #BEBEBE;
+    width: 300px;
+    height: 50px;
+    padding-left: 15px;
+}
+.send_button a{
+    background-color: #1E1E1E;
+    padding: 20px 100px;
 }
 
-/* font-family: "Playfair Display", serif; */
-/* font-family: "Barlow", sans-serif; */
 @media only screen and (max-width: 992px) {
 
 }

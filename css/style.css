@@ -24,7 +24,11 @@ header{
 .main__about_us h4,
 .main__about_us p,
 .main__our_services h4,
-.main__our_services__card p{
+.main__our_services__card p,
+.main__achievements h4,
+.main__achievements a,
+.main__our_specialities h4,
+.main__our_specialities p{
     font-family: "Barlow", sans-serif;
 }
 .header__contacts a,
@@ -34,7 +38,10 @@ header{
 .main__introduction h4,
 .main__introduction h2,
 .main__introduction a,
-.send_button a{
+.send_button a,
+.main__our_specialities h4,
+.main__our_specialities h2,
+.main__our_specialities p{
     color: #fff;
 }
 .header__contacts a{
@@ -57,7 +64,8 @@ header{
 }
 .header__content_buttons__buy a,
 .header__content_buttons__hotel a,
-.main__introduction a{
+.main__introduction a,
+.main__achievements a{
     padding: 20px 30px;
 }
 .header__content_buttons__hotel,
@@ -78,15 +86,16 @@ header{
     align-items: center;
     width: max-content;
 }
-.header__content_buttons__buy a{
+.header__content_buttons__buy a,
+.main__achievements a{
     color: #1E1E1E;
 }
 .main_bg_img{
     position: relative;
 }
-.main_bg_img img{
+.main_bg_img img,
+.main__our_specialities img{
     width: 100%;
-    min-height: fit-content;
     height: auto;
     filter: brightness(0.4);
     object-fit: contain;
@@ -103,7 +112,9 @@ header{
 .main__introduction h2,
 .main__reservation h2,
 .main__about_us h2,
-.main__our_services__card h3{
+.main__our_services__card h3,
+.main__achievements h2,
+.main__our_specialities h2{
     font-family: "Playfair Display", serif;
 }
 .main__introduction a{
@@ -115,7 +126,11 @@ header{
 .main__about_us h4,
 .main__about_us p,
 .main__our_services h4,
-.main__our_services__card h3{
+.main__our_services__card h3,
+.main__achievements h4,
+.main__achievements a,
+.main__our_specialities h4,
+.main__our_specialities p{
     font-size: 24px;
 }
 .main__reservation div,
@@ -150,7 +165,9 @@ header{
     padding: 20px 100px;
 }
 .main__about_us h2,
-.main__our_services h2{
+.main__our_services h2,
+.main__achievements h2,
+.main__our_specialities h2{
     font-size: 56px;
 }
 .main__about_us img{
@@ -171,12 +188,33 @@ header{
 .main__our_services__card div:nth-child(1){
     display: flex;
     justify-content: center;
-    top: 0px;
+    right: 0;
 }
 .main__our_services__card img:nth-child(1){
     height: fit-content;
 }
-
+.main__achievements img{
+    max-width: 264px;
+    width: 100%;
+}
+.main__achievements a{
+    border: 1px solid #1E1E1E;
+}
+.main__our_specialities img{
+width: 100%;
+min-height: 700px;
+height: 100%;
+object-fit: cover;
+}
+.main__our_specialities{
+    margin-top: 150px;
+}
+.main__our_specialities div:nth-child(1){
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    right: 0;
+}
 @media only screen and (max-width: 992px) {
 
 }

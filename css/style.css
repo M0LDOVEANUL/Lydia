@@ -36,7 +36,10 @@ header {
 .main__our_specialities p,
 .main__rooms h4,
 .main__rooms a,
-.main__clients h4{
+.main__clients h4,
+.main__clients_card_descriptioon p,
+.our_gallery h4,
+.quick_links a{
     font-family: "Barlow", sans-serif;
 }
 
@@ -67,7 +70,8 @@ header {
 .header__content_buttons__buy,
 .main__reservation h4,
 .main__reservation_imputs form,
-.main__our_services__card p {
+.main__our_services__card p,
+.main__clients_card_descriptioon p{
     font-size: 18px;
 }
 
@@ -144,7 +148,10 @@ header {
 .main__our_services__card h3,
 .main__achievements h2,
 .main__our_specialities h2,
-.main__rooms h2 {
+.main__rooms h2,
+.main__clients_card_title h2,
+.our_gallery h2 ,
+.quick_links h2{
     font-family: "Playfair Display", serif;
 }
 
@@ -169,7 +176,8 @@ header {
 }
 
 .main__reservation div,
-.main__our_services {
+.main__our_services,
+.footer_reservation{
     background-color: #F5F5F5;
 }
 
@@ -271,12 +279,16 @@ header {
     flex-direction: column;
     right: 0;
 }
+.main__rooms_card img{
+    width: 100%;
+}
 .main__rooms_card div{
     background-color: #f5f5f5ce;
     z-index: 1;
    top: -100px;
 }
-.main__rooms_card h2{
+.main__rooms_card h2,
+.our_gallery__title h2{
     font-size: 36px;
 }
 .main__rooms_cards:nth-child(1),
@@ -286,7 +298,60 @@ header {
 .main__clients{
     background-color: #1E1E1E;
 }
+.main__clients_card{
+    border: 1px solid #3C3C3C;
+    margin-bottom: 100px;
+}
+.main__clients_card_profile{
+    gap: 15px;
+    align-items: center;
+}
+.main__clients_card_title h2{
+    font-size: 18px;
+}
+.our_gallery h4{
+    color: #515151;
+    font-size: 16px;
+}
+footer{
+    margin-top: 150px;
+    background-color: #1E1E1E;
+    padding: 50px;
+}
+.quick_links h2,
+.quick_links a{
+    color: #fff;
+}
+.quick_links h2{
+    font-size: 24px;
+}
+.quick_links a{
+    font-size: 18px;
+}
+.hotel_reservation{
+    position: relative;
+    margin-top: -100px;
+    background-color: #fff;
+    text-align: center;
+}
+.footer_reservation{
+    position: relative;
+    margin-top: -100px;
+}
+.footer_reservation_imputs input,
+.footer_reservation_imputs select{
+    border: 1px solid #BEBEBE;
+    height: 50px;
+    padding-left: 15px;
+}
+.footer_reservation_imputs input{
+width: 260px;
 
+}
+.footer_reservation_imputs select{
+    width: 160px;
+
+}
 @media only screen and (max-width: 992px) {}
 
 @media only screen and (max-width: 768px) {}
